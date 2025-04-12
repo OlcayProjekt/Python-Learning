@@ -8,3 +8,5 @@ else:
 total_expenses = start_price + costs * km
 
 print("Deine Kosten liegen bei unglaublichen", total_expenses)
+
+input("Bitte belibige Taste drücken...")
