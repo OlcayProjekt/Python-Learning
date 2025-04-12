@@ -5,23 +5,24 @@ print('Käsekuchen Nr.3')
 
 auswahl =  input('Bitte wähle deinen Rezept aus:')
 
-print('Sie haben die auswahl möglichkeit: ' + auswahl + ' ausgewählt')
+print('Sie haben die auswahl möglichkeit Nr. ' + auswahl + ' ausgewählt')
 
-if 1:
+if auswahl =='1':
     print('Pfannkuchen Rezept:')
-else:
-    print('Keine gültige Angabe.')
+    print('2 Eier - 200ml Milch - 150g Mehl - Prise Salz - Etwas Butter zum Braten')
 
-if 2:
+elif auswahl =='2':
     print('Waffel Rezept:')
+    print('3 Eier - 125g Zucker - 250g Mehl - 100g Butter - 1 TL Backpulver - 250ml Milch')
 
-else:
-    print('Keine gültige Angabe.')
-
-if 3:
+elif auswahl== '3':
     print('Käsekuchen Rezept:')
+    print('500g Quark - 150g Zucker - 3 Eier - 1 Päckchen Vanillezucker - 1 Päckchen Puddingpulver - 100ml Öl')
+
 else:
     print('Keine gültige Angabe.')
+
+print('')
 
 input("Bitte belibige Taste drücken...")
 
