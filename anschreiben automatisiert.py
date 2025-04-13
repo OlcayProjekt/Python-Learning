@@ -17,4 +17,5 @@ print("Ich bin " + age + " Jahre alt.")
 print("Ich lebe in der Stadt " +City+ " zurzeit.")
 print("Ich gehe zur " +Schule+ " Schule in " +City)
 
+print("Mehr auf OlcayProjekt/GitHub")
 input("Bitte belibige Taste drücken...")

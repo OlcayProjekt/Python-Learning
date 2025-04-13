@@ -29,6 +29,7 @@ else:
 
 print('')
 
+print("Mehr auf OlcayProjekt/GitHub")
 input("🔚Bitte belibige Taste drücken...")
 
 
