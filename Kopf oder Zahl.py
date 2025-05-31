@@ -1,55 +1,64 @@
-print("Kopf oder Zahl")
+import random
 
-print("")
+print("Kopf oder Zahl\n")
 
 Name = input("Gebe deinen Namen ein: ")
-print ("Salut, Mr" + Name )
+print("Salut, Mr " + Name + "\n")
 
-print("")
+print("Heute ist der Tag, wo du deine wichtigste Entscheidung treffen wirst.")
+print("Kopf oder Zahl?\n")
 
-print("Heute ist der Tag wo du deine wichtigste Entscheidung treffen wirst.")
-print("Kopf oder Zahl?")
+Auswahl = input("Gebe ein was du auswählst, " + Name + " (Kopf/Zahl): ").strip().lower()
 
-print("")
-
-Auswahl = input("Gebe ein was du auswählst " + Name +" (Kopf/Zahl): ")
-
-if Auswahl == 'Kopf':
-    print("Glück gehabt heute kommst du davon...")
-
-if Auswahl =='Zahl':
+if Auswahl == 'kopf':
+    print("Glück gehabt, heute kommst du davon...")
+elif Auswahl == 'zahl':
     print("Deine Tage sind auch gezählt...")
+else:
+    print("Ungültige Eingabe.")
 
 print('')
 
-if Auswahl == 'Kopf':
+if Auswahl == 'kopf':
     print("Lass uns noch eine Runde spielen.")
 
-wurf = input("Kopf oder Zahl: ")
+benutzertipp = input("Kopf oder Zahl: ").strip().lower()
+zufall = random.randint(1, 2)
+ergebnis = "kopf" if zufall == 1 else "zahl"
 
-import random
+print("Der Wurf ergibt:", ergebnis)
 
-wurf = random.randint(1, 2)
-
-if wurf == 1:
-    print("Gut Gemacht " + Name +", du hast Kopf bekommen")
-
+if benutzertipp == ergebnis:
+    print("Gut gemacht, " + Name + "! Du hast richtig geraten.")
 else:
-    print("Opps " + Name +", du hast Zahl bekommen")
+    print("Opps, " + Name + ". Das war leider falsch.")
 
 print("")
 
-last = input("Was hälst du davon wenn wir ein letztes mal um die Münze spielen? (ja/nein) ")
+last = input("Was hältst du davon, wenn wir ein letztes Mal um die Münze spielen? (ja/nein) ").strip().lower()
 
 if last == "ja":
-    print("Kopf oder ZAHL?")
+    print("Okay, so langsam gewöhne ich mich an dich.")
 
-if last == "nein":
-    print("war eine tolle Zeit mit dir.")
+elif last == "nein":
+    print("War eine tolle Zeit mit dir.")
 
+benutzertipp = input("Kopf oder Zahhhhhhll:").strip().lower()
+zufall = random.randint(1,2)
+ergebnis = "zahl" if zufall == 1 else "kopf"
 
+print("Der Wurf ergibt," + ergebnis)
 
+if benutzertipp == ergebnis:
+    print("YEAH, du bist ein nartur talent...")
+
+else:
+    print("Kann vorkommen, kopf hoch")
 
 print("")
+
+print("Danke fürs mitspielen, Moniseur " + Name)
+
 print("Mehr auf OlcayProjekt/GitHub")
-input("🔚Bitte belibige Taste drücken...")
+input("🔚 Bitte beliebige Taste drücken...")
+
